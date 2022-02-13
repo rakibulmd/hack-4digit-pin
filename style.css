@@ -35,6 +35,11 @@ main section {
 	padding: 6px;
 }
 
+.initiate {
+	display: flex;
+	align-items: center;
+}
+
 .initiate p {
 	color: red;
 }

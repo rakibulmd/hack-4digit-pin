@@ -23,18 +23,11 @@ function hackPass(target) {
 		console.log(key);
 		hackPass(target);
 	}
-	// else {
-	// 	document.getElementById("current-log").innerHTML =
-	// 		"Currenty key is:" + key;
-	// 	hackPass(target);
-	// }
 }
 
 document.getElementById("hack-btn").addEventListener("click", function () {
 	let target = document.getElementById("user-pin").innerText;
-
 	hackPass(target);
-
 	let targetValue = document.createElement("p");
 	targetValue.innerText = "The PIN is " + target;
 });
