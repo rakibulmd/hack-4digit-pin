@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="input">
+					<p>Enter Your PIN Here</p>
+					<p>4 Digit, do not start with 0</p>
+					<input
+						id="input-pin"
+						title="enter pin"
+						type="number"
+						min="1000"
+						max="9999"
+					/>
+					<button id="pin-submit">Submit</button>
+					<p>You entered: <span id="user-pin"></span></p>
+				</div>
+				<div class="initiate" id="target-parent">
+					<button id="hack-btn">Hack Now</button>
+				</div>
+			</section>
+			<div id="log-view" class="log">
+				<h1>PIN Tried to Match</h1>
+				<p id="cureent-log"></p>
+			</div>
+		</main>
+		<script src="hack.js"></script>
+	</body>
+</html>
